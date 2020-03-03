@@ -1,0 +1,33 @@
+/*** Navbar ***/
+#navigation{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	min-height: 10vh;
+	height: auto;
+}
+.brand-logo{
+	font-family: 'Trade Winds';
+	font-size: calc(80% + 15px);
+}
+.toggler{
+	font-size: calc(80% + 15px);
+	cursor: pointer;
+}
+
+/* navigation for large screens */
+.l-navlist{
+	list-style: none;
+}
+.l-navitem{
+	display: inline-block;
+	padding: 5px;
+}
+.l-navlink{
+	font-family: 'Trade Winds';
+	font-size: calc(80% + 10px);
+	color: black;
+	transition: 0.5s;
+}
+.l-navlink:hover{
+	color: white;
+	text-decoration: none;
+}
