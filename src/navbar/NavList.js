@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class LargeNav extends Component {
+class NavList extends Component {
 	render() {
 		return (
-			<div className="large-nav float-right">
+			<div className={this.props.open ? 'nav-small float-right' : 'nav float-right'}>
 				<ul className="l-navlist mt-2 mr-2">
 					<li className="l-navitem">
 						<a href="/" className="l-navlink">
@@ -31,4 +31,4 @@ class LargeNav extends Component {
 	}
 }
 
-export default LargeNav;
+export default NavList;

@@ -11,9 +11,14 @@
 .toggler{
 	font-size: calc(80% + 15px);
 	cursor: pointer;
+	display: none;
 }
 
-/* navigation for large screens */
+/* responisive navigation */
+.nav{
+    	position: relative;
+    }
+
 .l-navlist{
 	list-style: none;
 }
@@ -30,4 +35,89 @@
 .l-navlink:hover{
 	color: white;
 	text-decoration: none;
+}
+/*
+  ##Device = Desktops
+*/
+
+@media (min-width: 1281px) {
+	
+}
+
+/*
+##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+/*
+##Device = Tablets, Ipads (landscape)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.nav{
+		display: none;
+	}
+	.toggler{
+		display: block;
+	}
+    .nav-small{
+    	text-align: center;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    }
+    .l-navlist{
+		list-style: none;
+	}
+	.l-navitem{
+		display: block;
+		padding: 5px;
+	}
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (max-width: 480px) {
+	.nav{
+		display: none;
+	}
+	.toggler{
+		display: block;
+	}
+	.nav-small{
+    	position: relative;
+    	text-align: center;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    }
+  .l-navlist{
+		list-style: none;
+	}
+	.l-navitem{
+		display: block;
+		padding: 5px;
+	}
 }
